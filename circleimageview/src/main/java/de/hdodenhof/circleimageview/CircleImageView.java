@@ -350,6 +350,7 @@ public class CircleImageView extends ImageView {
         mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
 
         mBitmapPaint.setAntiAlias(true);
+        mBitmapPaint.setFilterBitmap(true);
         mBitmapPaint.setShader(mBitmapShader);
 
         mBorderPaint.setStyle(Paint.Style.STROKE);
